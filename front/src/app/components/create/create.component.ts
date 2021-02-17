@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create.component.css']
 })
 export class CreateComponent implements OnInit {
-
+   cliente: any = {
+    nombre: "",
+    pass:"",
+    correo:""
+  };
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  registrar(){
+    console.log(this.cliente);
+  }
 }
