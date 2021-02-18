@@ -11,7 +11,9 @@ export class CreateComponent implements OnInit {
     pass:"",
     correo:""
   };
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }
