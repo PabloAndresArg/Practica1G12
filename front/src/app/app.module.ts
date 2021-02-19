@@ -9,6 +9,7 @@ import { CreateComponent } from './components/create/create.component';
 
 import { HttpClientModule } from '@angular/common/http';
 
+import { ReactiveFormsModule } from '@angular/forms';
 
 // PARA EL NG-MODEL
 import {FormsModule} from '@angular/forms'; // enlaca mi objeto con el formulario y la base de datos
@@ -25,7 +26,8 @@ import {FormsModule} from '@angular/forms'; // enlaca mi objeto con el formulari
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
