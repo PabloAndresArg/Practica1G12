@@ -1,5 +1,19 @@
 {
-    "name": "Carlos NG",
-    "password": "123456",
-    "email": "carlosng@gmail.com"
-}
+    "employees": [
+      {
+        "name": "Sebastian",
+        "password": "12345523",
+        "email": "sebastian@codingthesmartway.com"
+      },
+      {
+        "name": "Steve",
+        "password": "12345523",
+        "email": "steve@codingthesmartway.com"
+      },
+      {
+        "name": "Ann",
+        "password": "12345523",
+        "email": "ann@codingthesmartway.com"
+      }
+    ]
+  }
