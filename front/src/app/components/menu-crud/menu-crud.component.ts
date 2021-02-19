@@ -1,21 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
-
+import { UsersService} from '../../services/users.service';
+import { User } from '../../models/user';
 @Component({
   selector: 'app-menu-crud',
   templateUrl: './menu-crud.component.html',
   styleUrls: ['./menu-crud.component.css']
 })
 export class MenuCrudComponent implements OnInit {
-  private rutas :any = ['/create' , '/read' , '/update' , '/delete'];
-  constructor(private router:Router) {
+  users = [] as User[];
+
+  constructor(
+    private userService: UsersService,
+  ) {
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void{
+    this.userService.getUsers().subscribe(res => {
+      this.users = res;
+      console.log(this.users);
+    });
   }
-
-  goto_create():void{
-    this.router.navigate([this.rutas[0]]);
-  }
-
 }
