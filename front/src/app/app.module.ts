@@ -7,6 +7,9 @@ import { MenuCrudComponent } from './components/menu-crud/menu-crud.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CreateComponent } from './components/create/create.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
+
 // PARA EL NG-MODEL
 import {FormsModule} from '@angular/forms'; // enlaca mi objeto con el formulario y la base de datos
 
@@ -16,9 +19,10 @@ import {FormsModule} from '@angular/forms'; // enlaca mi objeto con el formulari
     AppComponent,
     MenuCrudComponent,
     FooterComponent,
-    CreateComponent
+    CreateComponent,
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule
